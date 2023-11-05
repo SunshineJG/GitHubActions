@@ -13,9 +13,9 @@ jobs:
 
     steps:
       - id: step1
-        run: echo "::set-output name=test::VarValue1"
+        run: echo "name=test::VarValue1" >> $GITHUB_OUTPUT
       - id: step2
-        run: echo "::set-output name=test::VarValue2"
+        run: echo "name=test::VarValue2" >> $GITHUB_OUTPUT
 
   job2:
     runs-on: ubuntu-latest
